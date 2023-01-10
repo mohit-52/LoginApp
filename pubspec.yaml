@@ -1,0 +1,118 @@
+name: login_flutter_app
+description: A new Flutter project.
+
+
+
+publish_to: 'none' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+
+
+
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  
+  
+  cupertino_icons: ^1.0.2
+  google_fonts: ^3.0.1
+  flutter_native_splash: ^2.2.16
+  get: ^4.6.5
+  liquid_swipe: ^3.0.0
+  smooth_page_indicator: ^1.0.0+2
+  flutter_otp_text_field: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_native_splash:
+  color: "#f7f6f1"
+  image: "assets/images/splash_images/book.png"
+  branding: "assets/logos/logo.png"
+  color_dark: "#272727"
+  image_dark: "assets/images/splash_images/book.png"
+  branding_dark: "assets/logos/logo.png"
+
+  android 12:
+    icon_background_color: "#f7f6f1"
+    image: "assets/images/splash_images/book.png"
+    icon_background_color_dark: "#272727"
+    image_dark: "assets/images/splash_images/book.png"
+
+  web: false
+  
+  
+  
+  
+  flutter_lints: ^2.0.0
+
+
+
+
+
+flutter:
+
+  
+  
+  
+  uses-material-design: true
+
+  
+  assets:
+    - assets/
+    - assets/images/
+    - assets/logos/
+    - assets/images/splash_images/
+    - assets/images/on_boarding_images/
+    - assets/images/welcome_screen_images/
+    - assets/images/forget_password_images/
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
