@@ -18,3 +18,10 @@ const String mGoogleLogoImage = "assets/logos/google.png";
 
 //FORGOT PASSWORD SCREEN IMAGES
 const String mForgotPasswordCenterImage = "assets/images/forget_password_images/forget_password.png";
+
+// IMAGE SCREEN IMAGES
+const String mUserProfileImage = "assets/images/dashboard/dash-person.png";
+const String mBannerImage1 = "";
+const String mBannerImage2 = "";
+const String mTopCourseImage1 = "";
+const String mTopCourseImage2 = "";

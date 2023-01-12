@@ -60,3 +60,13 @@ const String mOtpTitle = "CO\nDE";
 const String mOtpSubTitle = "Verification";
 const String mOtpMessage = "Enter verification code sent at: ";
 const String mNext = "Next";
+
+// DASHBOARD SCREEN
+const String mDashboardTitle = "Hey, What's Up";
+const String mDashboardHeading = "Explore Courses";
+const String mDashboardSearch = "Search...";
+const String mDashboardBannerTitle1 = "Android For Begineers";
+const String mDashboardBannerTitle2 = "Java";
+const String mDashboardBannerSubTitle = "10 Lessons";
+const String mDashboardButton = "View All";
+const String mDashboardTopCourses = "Top Courses";

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:login_flutter_app/src/common_widgets/form/form_header_widget.dart';
 import 'package:login_flutter_app/src/constants/image_string.dart';
 import 'package:login_flutter_app/src/constants/sizes.dart';
 import 'package:login_flutter_app/src/constants/text_strings.dart';
+import 'package:login_flutter_app/src/features/authentication/controllers/signup_controller.dart';
 import 'package:login_flutter_app/src/features/authentication/screens/login/widgets/login_form_widget.dart';
 import 'package:login_flutter_app/src/features/authentication/screens/signUp/widgets/signup_form_widget.dart';
 
