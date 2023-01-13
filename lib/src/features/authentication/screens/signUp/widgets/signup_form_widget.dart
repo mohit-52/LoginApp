@@ -7,6 +7,7 @@ import '../../../../../constants/colors.dart';
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_strings.dart';
 import '../../../controllers/signup_controller.dart';
+final _formKey = GlobalKey<FormState>();
 
 class SignupFormWidget extends StatelessWidget {
   const SignupFormWidget({
@@ -16,7 +17,7 @@ class SignupFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(SignupController());
-    final _formKey = GlobalKey<FormState>();
+
 
     return Container(
       padding: EdgeInsets.symmetric(vertical: mFormHeight - 10),

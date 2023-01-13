@@ -33,7 +33,7 @@ class AuthenticationRepository extends GetxController {
       final ex = SignupWithEmailAndPasswordFailure.code(e.code);
       return ex.message;
     } catch (_) {
-      const ex =  SignupWithEmailAndPasswordFailure();
+      final ex =  SignupWithEmailAndPasswordFailure();
       return ex.message;
     }
     return null;
