@@ -22,7 +22,9 @@ class ProfileScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
           icon: const Icon(
             LineAwesomeIcons.angle_left,
             color: mDarkColor,
@@ -32,7 +34,8 @@ class ProfileScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+              },
               icon: Icon(
                 isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon,
                 color: mDarkColor,

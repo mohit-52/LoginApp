@@ -80,10 +80,10 @@ class SignupFormWidget extends StatelessWidget {
 
                       // Get user details name, phoneNo, email and password and then otp login
                       final user = UserModel(
-                          fullName: controller.fullName.toString().trim(),
-                          email: controller.email.toString().trim(),
-                          phoneNo: controller.phoneNo.toString().trim(),
-                          password: controller.password.toString().trim());
+                          fullName: controller.fullName.text.trim(),
+                          email: controller.email.text.trim(),
+                          phoneNo: controller.phoneNo.text.trim(),
+                          password: controller.password.text.trim());
                       SignupController.instance.createUser(user);
 
                     }
