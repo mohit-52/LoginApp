@@ -25,3 +25,6 @@ const String mBannerImage1 = "";
 const String mBannerImage2 = "";
 const String mTopCourseImage1 = "";
 const String mTopCourseImage2 = "";
+
+// PROFILE SCREEN IMAGES
+const String mProfileImage = "assets/images/profile/profile.png";

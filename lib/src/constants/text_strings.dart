@@ -70,3 +70,13 @@ const String mDashboardBannerTitle2 = "Java";
 const String mDashboardBannerSubTitle = "10 Lessons";
 const String mDashboardButton = "View All";
 const String mDashboardTopCourses = "Top Courses";
+
+// USER PROFILE TEXT STRINGS
+const String mProfile = 'Profile';
+const String mDelete = 'Delete';
+const String mEditProfile = 'Edit Profile';
+const String mJoined = 'Joined';
+const String mJoinedAt = '31 JAN 2023';
+const String mProfileHeading = 'MOHIT SHARMA';
+const String mProfileSubHeading = 'mohitkaushis7@gmail.com';
+const String mMent1 = 'Settings';

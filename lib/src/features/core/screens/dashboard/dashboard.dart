@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:login_flutter_app/src/constants/image_string.dart';
+import 'package:login_flutter_app/src/features/core/screens/profile/profile_screen.dart';
 import 'package:login_flutter_app/src/repository/authentication_repository/aurhentication_repository.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/sizes.dart';
@@ -30,7 +33,8 @@ class Dashboard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10), color: mCardBgColor),
             child: IconButton(
               onPressed: () {
-                AuthenticationRepository.instance.logout();
+                Get.to(()=> ProfileScreen());
+                // AuthenticationRepository.instance.logout();
               },
               icon: const Image(
                 image: AssetImage(mUserProfileImage),

@@ -9,14 +9,6 @@ publish_to: 'none'
 
 
 
-
-
-
-
-
-
-
-
 version: 1.0.0+1
 
 environment:
@@ -32,18 +24,33 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  
-  
-  cupertino_icons: ^1.0.2
-  google_fonts: ^3.0.1
-  flutter_native_splash: ^2.2.16
+#    State MANAGEMENT
   get: ^4.6.5
+
+#  Splash Screen Package
+  flutter_native_splash: ^2.2.16
+
+  #  ON BOARDING PACKAGES
   liquid_swipe: ^3.0.0
   smooth_page_indicator: ^1.0.0+2
+
+#  OTP Text Field Package
   flutter_otp_text_field: ^1.1.1
+
+#  Firebase Packages
   firebase_core: ^2.4.1
   firebase_auth: ^4.2.5
+  cloud_firestore: ^4.3.1
+
+#  Icon Packages
+  cupertino_icons: ^1.0.2
+  line_awesome_flutter: ^2.0.0
+
+#  Font Packages
+  google_fonts: ^3.0.1
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -91,6 +98,7 @@ flutter:
     - assets/images/welcome_screen_images/
     - assets/images/forget_password_images/
     - assets/images/dashboard/
+    - assets/images/profile/
 
 
 

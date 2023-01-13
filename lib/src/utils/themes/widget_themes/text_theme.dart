@@ -8,15 +8,15 @@ class MTextTheme {
       fontWeight: FontWeight.bold,
       fontSize: 50,
     ),
-    headline2: GoogleFonts.roboto(
+    headline2: GoogleFonts.timmana(
       color: Colors.black87,
       fontWeight: FontWeight.bold,
-      fontSize: 32,
+      fontSize: 28,
     ),
     headline3: GoogleFonts.montserrat(
       color: Colors.black87,
       fontWeight: FontWeight.bold,
-      fontSize: 30,
+      fontSize: 20,
     ),
     subtitle1: GoogleFonts.poppins(
       color: Colors.black54,
@@ -28,7 +28,10 @@ class MTextTheme {
       fontWeight: FontWeight.bold,
       fontSize: 14,
     ),
-    bodyText1: GoogleFonts.poppins(),
+    bodyText1: GoogleFonts.poppins(
+      fontWeight: FontWeight.bold,
+      fontSize: 20
+    ),
   );
   static TextTheme darktextTheme = TextTheme(
     headline1: GoogleFonts.poppins(
