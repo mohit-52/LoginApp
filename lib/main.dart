@@ -11,7 +11,8 @@ import 'package:login_flutter_app/src/utils/themes/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then((value)=> Get.put(AuthenticationRepository()));
+  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
+      .then((value) => Get.put(AuthenticationRepository()));
   runApp(const MyApp());
 }
 
@@ -33,5 +34,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

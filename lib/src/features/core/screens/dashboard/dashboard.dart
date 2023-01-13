@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_flutter_app/src/constants/image_string.dart';
+import 'package:login_flutter_app/src/repository/authentication_repository/aurhentication_repository.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/sizes.dart';
 import '../../../../constants/text_strings.dart';
@@ -28,7 +29,9 @@ class Dashboard extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: mCardBgColor),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                AuthenticationRepository.instance.logout();
+              },
               icon: const Image(
                 image: AssetImage(mUserProfileImage),
               ),
