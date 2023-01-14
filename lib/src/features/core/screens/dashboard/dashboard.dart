@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:login_flutter_app/src/constants/image_string.dart';
-import 'package:login_flutter_app/src/features/core/screens/profile/profile_screen.dart';
-import 'package:login_flutter_app/src/repository/authentication_repository/aurhentication_repository.dart';
+import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/appBar.dart';
+import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/banner.dart';
+import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/categories.dart';
+import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/searchbar.dart';
+import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/topcourse_card.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/sizes.dart';
 import '../../../../constants/text_strings.dart';
@@ -15,113 +16,38 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     final txtTheme = Theme.of(context).textTheme;
     return Scaffold(
-      appBar: AppBar(
-        leading: const Icon(
-          Icons.menu,
-          color: mDarkColor,
-        ),
-        title: Text(
-          mAppName,
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
-        centerTitle: true,
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        actions: [
-          Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10), color: mCardBgColor),
-            child: IconButton(
-              onPressed: () {
-                Get.to(()=> ProfileScreen());
-                // AuthenticationRepository.instance.logout();
-              },
-              icon: const Image(
-                image: AssetImage(mUserProfileImage),
-              ),
-            ),
-          ),
-        ],
-      ),
+      appBar: DashboardAppBar(),
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(right: 10, top: 20),
-          padding: const EdgeInsets.all(mDashboardPadding),
+          padding: EdgeInsets.all(mDashboardPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                mDashboardTitle,
-                style: txtTheme.subtitle1,
-              ),
-              Text(
-                mDashboardHeading,
-                style: txtTheme.headline2,
-              ),
-              const SizedBox(
-                height: mDashboardPadding,
-              ),
+              // Headings
+              Text(mDashboardTitle, style: txtTheme.bodyText1),
+              Text(mDashboardHeading, style: txtTheme.headline2),
+              const SizedBox(height: mDashboardPadding),
 
-              // SEARCH BAR
-              Container(
-                decoration:
-                    BoxDecoration(border: Border(left: BorderSide(width: 4))),
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      mDashboardSearch,
-                      style: txtTheme.headline2
-                          ?.apply(color: Colors.grey.withOpacity(0.5)),
-                    ),
-                    Icon(
-                      Icons.mic,
-                      size: 25,
-                    )
-                  ],
-                ),
-              ),
+              // Search Bar
+              searchbar(txtTheme: txtTheme),
 
-              // CATEGORIES
-              // SizedBox(
-              //   height: 45,
-              //   child: ListView.builder(
-              //     itemCount: list.length,
-              //     shrinkWrap: true,
-              //     scrollDirection: Axis.horizontal,
-              //     itemBuilder: (context, index) => GestureDetector(
-              //       onTap: list[index].onPress,
-              //       child: SizedBox(
-              //         width: 170,
-              //         height: 45,
-              //         child: Row(
-              //           children: [
-              //             Container(
-              //               width: 45,
-              //               height: 45,
-              //               decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: mDarkColor),
-              //               child: Center(
-              //                 child: Text(list[index].title, style: txtTheme.headline6?.apply(color: Colors.white)),
-              //               ),
-              //             ),
-              //             const SizedBox(width: 5),
-              //             Flexible(
-              //               child: Column(
-              //                 crossAxisAlignment: CrossAxisAlignment.start,
-              //                 mainAxisAlignment: MainAxisAlignment.center,
-              //                 children: [
-              //                   Text(list[index].heading, style: txtTheme.headline6, overflow: TextOverflow.ellipsis),
-              //                   Text(list[index].subHeading, style: txtTheme.bodyText2, overflow: TextOverflow.ellipsis)
-              //                 ],
-              //               ),
-              //             )
-              //           ],
-              //         ),
-              //       ),
-              //     ),
-              //   ),
-              // ),
+              const SizedBox(height: mDashboardPadding),
+
+              // Categories
+              categories(txtTheme: txtTheme),
+
+              const SizedBox(height: mDashboardPadding),
+
+              // Banners
+              banner(txtTheme: txtTheme),
+
+              const SizedBox(height: mDashboardPadding),
+              // TOP COURSES
+              Text(mDashboardTopCourses,
+                  style: txtTheme.headline2?.apply(fontSizeFactor: 1.1)),
+
+              // Top Course Card
+              top_course_card(txtTheme: txtTheme),
             ],
           ),
         ),
@@ -129,3 +55,11 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+

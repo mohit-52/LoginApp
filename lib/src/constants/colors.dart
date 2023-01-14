@@ -8,7 +8,7 @@ const mPrimaryColor = Color(0xFFE58383);
 const mSecondaryColor = Color(0xFF1F1F1F);
 const mAccentColor = Color(0xFF001BFF);
 
-const mCardBgColor = Color(0xFFFFFFFF);
+const mCardBgColor = Color(0xFFE7E7E2);
 const mWhiteColor = Color(0xffffffff);
 const mDarkColor = Color(0xff000000);
 

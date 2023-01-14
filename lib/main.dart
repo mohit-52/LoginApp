@@ -5,6 +5,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:login_flutter_app/firebase_options.dart';
+import 'package:login_flutter_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:login_flutter_app/src/features/core/screens/dashboard/dashboard.dart';
 import 'package:login_flutter_app/src/repository/authentication_repository/aurhentication_repository.dart';
 import 'package:login_flutter_app/src/utils/themes/theme.dart';
@@ -28,9 +29,9 @@ class MyApp extends StatelessWidget {
       darkTheme: MAppTheme.darkTheme,
       themeMode: ThemeMode.system,
       debugShowMaterialGrid: false,
-      defaultTransition: Transition.leftToRight,
+      defaultTransition: Transition.circularReveal,
       transitionDuration: const Duration(milliseconds: 500),
-      home: Dashboard(),
+      home: SplashScreen(),
     );
   }
 }

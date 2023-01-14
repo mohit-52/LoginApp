@@ -21,10 +21,14 @@ const String mForgotPasswordCenterImage = "assets/images/forget_password_images/
 
 // IMAGE SCREEN IMAGES
 const String mUserProfileImage = "assets/images/dashboard/dash-person.png";
-const String mBannerImage1 = "";
-const String mBannerImage2 = "";
-const String mTopCourseImage1 = "";
-const String mTopCourseImage2 = "";
+const String mBookmarkImage = "assets/images/dashboard/bookmark.png";
+const String mBannerImage1 = "assets/images/dashboard/banner.png";
+const String mBannerImage2 = "assets/images/dashboard/banner2.png";
+const String mTopCourseImage1 = "assets/images/dashboard/course_image_1.png";
+const String mTopCourseImage2 = "assets/images/dashboard/course_image_2.jpg";
+const String mTopCourseImage3 = "assets/images/dashboard/course_image_3.jpg";
+const String mTopCourseImage4 = "assets/images/dashboard/course_image_4.jpg";
+const String mTopCourseImage5 = "assets/images/dashboard/course_image_5.jpg";
 
 // PROFILE SCREEN IMAGES
 const String mProfileImage = "assets/images/profile/profile.png";
